@@ -1,0 +1,308 @@
+
+/* Resetr */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main styling */
+html,body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}  
+
+h1, h2, h3 {
+    padding-bottom: 20px;
+}
+
+p{
+    margin: 10px 0;
+    font-size: 18px;
+    
+}
+p a {
+    padding: 0px 20px;
+    color: rgb(214, 174, 98);
+}
+
+p a:hover {
+    color: white;
+}
+
+
+/* Utility classes */
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+.text-primary {
+    color: rgb(243, 175, 73);
+}
+
+.lead {
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    background: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgb(243, 175, 73);
+    color: #333;
+}
+
+.btn-light {
+    background: rgba(233, 208, 169, 0.76);
+    color: black;
+}
+
+.bg-dark {
+    background: #333;
+    color: white;
+}
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+.bg-primary {
+    background: rgb(243, 175, 73);
+    color: #333;   
+}
+.bg-oge {
+    color: rgb(243, 175, 73);
+}
+.bg-new1 {
+    background: rgba(247, 226, 112, 0.932);
+    color: black; 
+}
+
+.clr {
+    clear: both;
+}
+
+
+/* navbar */
+#navbar {
+     background: rgb(92, 92, 92);
+     color: white;
+     overflow: auto;
+}
+
+#navbar a {
+    color: white;
+}
+
+#navbar h1 {
+    float: left;
+    padding-top: 20px;
+}
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+#navbar ul li {
+    float: left;
+} 
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#navbar ul li a:hover {
+    background: rgba(180, 176, 117, 0.753);
+    color: black;
+}
+#navbar ul li a.current {
+    background: #444;
+    color: bisque;
+}
+
+/* showcase */
+#showcase {
+    background: url('../images/code1.jpg') no-repeat
+    center center/cover;
+    height: 500px;
+}
+
+#showcase .showcase-content {
+    color: white;
+    text-align: center;
+    padding-top: 170px;
+}
+
+#showcase .showcase-content h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+}
+
+#showcase .showcase-content p {
+    padding-bottom: 20px;
+    line-height: 1.7rem;
+}
+
+
+/* Home Info */
+#home-info {
+    height: 500px;
+    padding: 80px;
+    display: flex;
+}
+#home-info .info-img{
+    float: right;
+    width: 50%;
+    background: url('../images/image2.JPG');
+    background-size: 350px;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    padding: 20px;
+    border-radius: 1.5em;
+}
+
+#home-info .content{
+    float: right;
+    width: 50%;
+    text-align: center;
+    padding: 60px 30px;
+    overflow: hidden;
+} 
+#home-info .content p {
+    padding-bottom: 25px;
+}
+
+/* features */
+
+.box {
+    float: left;
+    width: 33.3%;
+    height: 350px;
+    padding: 50px;
+    text-align: center;
+}
+.box i {
+    margin-bottom: 10px;
+}
+.box h3 {
+    font-size: 50px;
+    margin-top: 70px;
+}
+
+/* About Info */
+#about-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right img {
+    display: block;
+    margin: 20px;
+    width: 80%;
+    height: 100%;
+}
+
+#about-info .info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+/* CSS Grid */
+
+.blue {
+    background-color: blue;
+}
+
+/* CSS Grid ( grid-template-columns: repeat(4, 100px); )
+object-fit: cover;
+  width: 100% */
+
+.grid-item {
+    margin: 10px;
+    height: 300px;
+ }
+.grid-container {
+    background-color: rgb(128, 106, 80);
+    display: grid;
+    grid-template-columns: 250px 150px 250px;
+    grid-auto-rows: minmax(200px, auto);
+    grid-gap: 5px;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.grid-item-1 {
+    grid-column: span 3;
+}
+.grid-item-2 {
+    grid-column: span 2;
+}
+.grid-item-5 {
+    grid-column: span 2;
+}
+.grid-item-6 {
+    grid-column: span 3;
+}
+
+.myimage {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Contact Form */
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+#contact-form button {
+    margin-bottom: 20px;
+}
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+    height: 200px;
+}
+
+
+
+/* Footer */
+#main-footer {
+    text-align: center;
+    background: #444;
+    color: white;
+    padding: 15px;
+    
+}
+.main-footer-space .p-footer a {
+    padding: 0px 20px;
+}
+
+/* home page styling */
+.features {
+    display: flex;
+}
